@@ -102,10 +102,10 @@
                     </goals>
 
                     <configuration>
-                        <outputDirectory>C:/workspace/otr-file-service-spring/src/main/webapp/WEB-INF/lib</outputDirectory>
+                        <outputDirectory>${project.basedir}/src/main/webapp/WEB-INF/lib</outputDirectory>
                         <resources>
                             <resource>
-                                <directory>C:/workspace/C:\workspace\otr-utiliies/target</directory>
+                                <directory>C:/workspace/otr-utiliies/target</directory>
                                 <includes>
                                     <include>otr-utils.jar</include>
                                 </includes>
@@ -198,10 +198,10 @@
                     </goals>
 
                     <configuration>
-                        <outputDirectory>C:/workspace/otr-file-service-spring/src/main/webapp/WEB-INF/lib</outputDirectory>
+                        <outputDirectory>${project.basedir}/src/main/webapp/WEB-INF/lib</outputDirectory>
                         <resources>
                             <resource>
-                                <directory>C:/workspace/C:\workspace\otr-utiliies/target</directory>
+                                <directory>C:/workspace/otr-utiliies/target</directory>
                                 <includes>
                                     <include>otr-utils.jar</include>
                                 </includes>
