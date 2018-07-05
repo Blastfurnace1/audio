@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import com.blastfurnace.otr.data.audiofile.AudioService;
 import com.blastfurnace.otr.data.audiofile.model.AudioFileProperties;
 import com.blastfurnace.otr.data.audiofile.repository.AudioRepository;
-import com.blastfurnace.otr.rest.request.QueryData;
+import com.blastfurnace.otr.service.request.QueryData;
 
 @Component("AudioService")
 public class AudioServiceImpl implements AudioService {

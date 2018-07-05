@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.blastfurnace.otr.data.audiofile.model.AudioFileProperties;
 import com.blastfurnace.otr.data.respository.generic.GenericRepository;
-import com.blastfurnace.otr.rest.request.QueryData;
+import com.blastfurnace.otr.service.request.QueryData;
 
 import java.util.List;
 
