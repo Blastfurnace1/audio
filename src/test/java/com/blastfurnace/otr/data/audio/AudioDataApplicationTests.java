@@ -17,6 +17,8 @@ package com.blastfurnace.otr.data.audio;
 
 
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -37,6 +39,7 @@ import static org.assertj.core.api.BDDAssertions.then;
 
 public class AudioDataApplicationTests extends UtilitiesApplicationTest {
 
+	private static final Logger log = LoggerFactory.getLogger(AudioDataApplicationTests.class); 
 	
 	@Autowired
 	AudioService audioService;
@@ -56,7 +59,8 @@ public class AudioDataApplicationTests extends UtilitiesApplicationTest {
 	
 	@Test
 	/** Test Data Access for Audio file Properties. */
-	public void shouldPerformAudioFilePropertiesRecordActions() throws Exception {
+	public void shouldPerformAudioDataRecordActions() throws Exception {
+		log.info("Audio Data Tests - Start");
 		
 		AudioFileProperties afp = getNewAudioFileProperties();
 		// add
@@ -70,5 +74,7 @@ public class AudioDataApplicationTests extends UtilitiesApplicationTest {
 		// make sure its deleted
 		newAfp = audioService.get(newAfp.getId());
 		then(null == newAfp);
+		
+		log.info("Audio Data Tests - Complete");
 	}
 }
